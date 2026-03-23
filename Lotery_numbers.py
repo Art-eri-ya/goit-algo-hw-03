@@ -8,7 +8,7 @@ def get_numbers_ticket(min, max, quantity):
 
     else:
         pass
-    return numbers
+    return sorted(numbers)
 
 
 print(get_numbers_ticket(1, 49, 6))
