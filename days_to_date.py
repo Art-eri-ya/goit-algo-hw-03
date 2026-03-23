@@ -5,7 +5,7 @@ def get_days_from_today(date):
     try:
         dt_obj = datetime.strptime(date, '%Y-%m-%d').date()
         today = datetime.today().date()
-        days_difference = abs(dt_obj - today).days
+        days_difference = (today - dt_obj).days
         return days_difference
     except ValueError:
         return "Wrong format! Please enter date in YYYY-MM-DD."
